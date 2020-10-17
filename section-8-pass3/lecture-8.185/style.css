@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,600;0,700;0,900;1,600;1,700&display=swap');
 
 /* Body Typeface */
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,600;0,700;0,900;1,600;1,700&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;0,700;1,500;1,700&display=swap');
 
 body {
   margin: 0;
@@ -26,5 +26,71 @@ header {
   letter-spacing: 1px;
   color: #008000; /* Green */
   text-shadow: 1px 2px #ffffff;
-  margin: 0 0 9px 0; 
+  margin: 0 0 3px 0; 
+}
+
+.description {
+  font-family: 'Source Sans Pro', 'Helvetica', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+  color: #fffafa; /* Snow */
+  margin: 0 0 9px 35px;
+}
+
+.instructions {
+  width: 775px;
+  height: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 35px;
+  background-color: #000000;
+  border: 3px inset #ffffff;
+  border-radius: 10px;
+  padding: 10px 35px;
+}
+
+.instructions p {
+  font-family: 'Source Sans Pro', 'Helvetica', sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 0.65px;
+  color: #ffffff;
+  text-align: center;
+}
+
+kbd {
+  font-family: monospace;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 0.65px;
+  color: #6a5acd; /* Slate Blue */
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.tasks {
+  font-family: 'Source Sans Pro', 'Helvetica', sans-serif;
+  font-size: 23px;
+  font-weight: 900;
+  letter-spacing: 0.65px;
+  margin-left: 35px;
+  margin-bottom: 3px;
+  color: #00aa00;
+  text-shadow: 1px 2px #fafafa;
+}
+
+.taskList {
+  list-style: square;
+  margin-left: 35px;
+}
+
+.taskList-item {
+  font-family: 'Alegreya', 'Palatino', serif;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.65px;
+  color: #008000; /* Green */
 }
