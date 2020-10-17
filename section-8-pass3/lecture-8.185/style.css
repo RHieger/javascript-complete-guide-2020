@@ -1,0 +1,30 @@
+/* Heading Typeface */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,600;0,700;0,900;1,600;1,700&display=swap');
+
+/* Body Typeface */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,600;0,700;0,900;1,600;1,700&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding: 18px 35px 12px 35px;
+  border-radius: 10px;
+  background-color: rgba(5, 138, 65, 0.35);
+}
+
+.title {
+  font-family: 'Source Sans Pro', 'Helvetica', sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #008000; /* Green */
+  text-shadow: 1px 2px #ffffff;
+  margin: 0 0 9px 0; 
+}
