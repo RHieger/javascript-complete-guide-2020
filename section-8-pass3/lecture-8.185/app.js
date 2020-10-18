@@ -15,3 +15,25 @@ console.log(
 );
 console.log('moreNumbers[] =>\n');
 console.table(moreNumbers);
+
+// STRANGE BEHAVIOR USING Array() CONSTRUCTOR:
+
+const strange = new Array(12);
+
+console.log(
+  "What happens if I create strange[]" +
+  " with Array() Constructor and single" +
+  " element of 12?\n"
+);
+console.log("strange[] =>\n")
+console.log(strange);
+console.warn(
+  "WHAT?!? Why does this create an array" +
+  " with 12 empty elements?"
+);
+console.log(
+  "\nWhen Array() constructor is passed a single" +
+  " number, it creates an array of the length " +
+  "specified by that number and populated with " +
+  "empty elements.\n"
+);

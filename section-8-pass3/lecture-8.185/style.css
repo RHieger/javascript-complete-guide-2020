@@ -94,3 +94,8 @@ kbd {
   letter-spacing: 0.65px;
   color: #008000; /* Green */
 }
+
+.note {
+  font-weight: 700;
+  color: #6a5acd;
+}
