@@ -52,3 +52,12 @@ const yetMoreNumbers = Array.of(13, 76, -32);
 console.log("\nCreating yetMoreNumbers[] Using Array.of() Method...\n");
 console.log("yetMoreNumbers[] =>\n");
 console.table(yetMoreNumbers);
+
+// Method #4: Create array Using Array.from() Method
+const arrayLikeObject = "Hello World!";
+const arrayFromObject = Array.from(arrayLikeObject);
+
+console.log("\nCreating arrayFromObject[] Using Array.from()...\n");
+console.log(`Value of arrayLikeObject:\n"${arrayLikeObject}"`);
+console.log("arrayFromObject[] =>\n");
+console.table(arrayFromObject);
