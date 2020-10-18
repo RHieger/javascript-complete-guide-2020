@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  margin-top: 0;
+  margin-top: 12px;
   margin-left: auto;
   margin-right: auto;
   width: 90%;
@@ -44,11 +44,11 @@ header {
   margin-left: auto;
   margin-right: auto;
   margin-top: 25px;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
   background-color: #000000;
   border: 3px inset #ffffff;
   border-radius: 10px;
-  padding: 10px 35px;
+  padding: 4px 35px;
 }
 
 .instructions p {

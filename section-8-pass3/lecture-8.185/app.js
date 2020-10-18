@@ -45,3 +45,10 @@ console.log(
 );
 console.log("anotherNumberArray[] =>\n");
 console.table(anotherNumberArray);
+
+// Method #4: Create array Using Array.of() Method
+const yetMoreNumbers = Array.of(13, 76, -32);
+
+console.log("\nCreating yetMoreNumbers[] Using Array.of() Method...\n");
+console.log("yetMoreNumbers[] =>\n");
+console.table(yetMoreNumbers);
