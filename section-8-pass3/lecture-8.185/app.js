@@ -53,7 +53,7 @@ console.log("\nCreating yetMoreNumbers[] Using Array.of() Method...\n");
 console.log("yetMoreNumbers[] =>\n");
 console.table(yetMoreNumbers);
 
-// Method #4: Create array Using Array.from() Method
+// Method #5: Create array Using Array.from() Method
 const arrayLikeObject = "Hello World!";
 const arrayFromObject = Array.from(arrayLikeObject);
 
@@ -61,3 +61,17 @@ console.log("\nCreating arrayFromObject[] Using Array.from()...\n");
 console.log(`Value of arrayLikeObject:\n"${arrayLikeObject}"`);
 console.log("arrayFromObject[] =>\n");
 console.table(arrayFromObject);
+
+// Method #6: Create array Using Array.from() Passed a nodeList
+
+// Capture NodeList from DOM:
+const listItems = document.querySelectorAll("li");
+// Transform listItems to array
+const arrayFromNodeList = Array.from(listItems);
+
+console.log("Create arrayFromNodeList[] Using Array.from()...\n");
+console.log(`Content in listItems =>\n${listItems}`);
+console.log("arrayFromNodeList[] =>\n");
+arrayFromNodeList.forEach( (node, index, arrayFromNodeList) => {
+  console.log(`\nIndex: ${index} Value: ${node.innerText}\n`);
+});
