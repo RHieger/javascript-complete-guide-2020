@@ -9,3 +9,5 @@ const person = {
     alert('Hi there!');
   }
 };
+
+person.greet();
