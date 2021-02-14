@@ -10,4 +10,7 @@ const person = {
   }
 };
 
-person.greet();
+// Add a property to person() after-the-fact
+person.isAdmin = true;
+
+console.log(person);
