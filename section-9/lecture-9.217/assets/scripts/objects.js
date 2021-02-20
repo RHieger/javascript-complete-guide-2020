@@ -1,3 +1,11 @@
+const movieList = document.getElementById('movie-list');
+
+// Use bracket notation to set movieList background to red.
+// NOTE: Original CSS property name can be used below because
+// it is in quotes in the square bracket.
+movieList.style['background-color'] = '#ff0000';
+movieList.style['display'] = 'block';
+
 const person = {
   'first name': 'Bobby',
   age: 58,
