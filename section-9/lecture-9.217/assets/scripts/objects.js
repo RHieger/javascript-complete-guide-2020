@@ -1,5 +1,5 @@
 const person = {
-  name: 'Bobby',
+  'first name': 'Bobby',
   age: 58,
   hobbies: [
     'Computer gaming',
@@ -10,12 +10,13 @@ const person = {
   }
 };
 
-// NOTE: Because objects are hoisted in JavaScript,
-// the original object with the age property will
-// never be logged to the console.
-console.log(person);
-// Add a property to person() after-the-fact
-person.isAdmin = true;
+// Use square bracket notation to log 'first name'
+// key to console.
 
-// Delete age property from person()
-delete person.age;
+// NOTE: Typically you would not want to use a
+// two-word key in an object, as it is not considered
+// a best practice. It can, however, be done here in
+// order to demonstrate this notation applied to an
+// object, as opposed to an array.
+
+
