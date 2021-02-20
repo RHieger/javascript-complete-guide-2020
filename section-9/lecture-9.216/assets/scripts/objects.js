@@ -10,7 +10,12 @@ const person = {
   }
 };
 
+// NOTE: Because objects are hoisted in JavaScript,
+// the original object with the age property will
+// never be logged to the console.
+console.log(person);
 // Add a property to person() after-the-fact
 person.isAdmin = true;
 
-console.log(person);
+// Delete age property from person()
+delete person.age;
