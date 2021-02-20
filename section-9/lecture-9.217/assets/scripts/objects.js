@@ -19,4 +19,5 @@ const person = {
 // order to demonstrate this notation applied to an
 // object, as opposed to an array.
 
-
+console.log("Value of person['first name'] =>\n");
+console.log(person['first name']);
