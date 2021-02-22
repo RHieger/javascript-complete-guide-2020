@@ -27,5 +27,14 @@ const person = {
 // order to demonstrate this notation applied to an
 // object, as opposed to an array.
 
-console.log("Value of person['first name'] =>\n");
-console.log(person['first name']);
+// It's also possible to store the string key name
+// by storing it in a constant. Refactored code
+// begins after the commented out code below.
+
+// console.log("Value of person['first name'] =>\n");
+// console.log(person['first name']);
+
+const keyName = 'first name';
+
+console.log("Value of person[keyName] =>\n");
+console.log(person[keyName]);
