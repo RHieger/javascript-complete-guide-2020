@@ -14,5 +14,5 @@ const addMovieHandler = () => {
     ) {
       return;
   }
-
+  const newMovie = {};
 };
