@@ -14,5 +14,11 @@ const addMovieHandler = () => {
     ) {
       return;
   }
-  const newMovie = {};
+  const newMovie = {
+    info: {
+      title,
+      [extraName]: extraValue
+    },
+    id: Math.random() * 1_000
+  };
 };
