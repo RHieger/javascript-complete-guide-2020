@@ -4,6 +4,8 @@ const searchButton = document.getElementById('search-btn');
 // Array of movie objects populated by addMovieHandler()
 const movies = [];
 
+const renderMovies = () => {};
+
 const addMovieHandler = () => {
   
   const title = document.getElementById('title').value;
