@@ -14,6 +14,11 @@ const renderMovies = () => {
     movieList.classList.add('visible');
   }
   movieList.innerHTML = '';
+
+  movies.forEach( () => {
+    
+  });
+
 };
 
 const addMovieHandler = () => {
