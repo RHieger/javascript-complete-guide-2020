@@ -15,8 +15,10 @@ const renderMovies = () => {
   }
   movieList.innerHTML = '';
 
-  movies.forEach( () => {
-    
+  movies.forEach( (movie) => {
+   const movieElement = document.createElement('li');
+   movieElement.textContent = movie.info.title;
+   movieList.append(movieElement);
   });
 
 };
@@ -39,12 +41,12 @@ const addMovieHandler = () => {
       title,
       [extraName]: extraValue
     },
-    id: parseInt(Math.random() * 1_000)
+    id: parseInt(Math.random() * 10_000)
   };
 
   movies.push(newMovie);
   console.log(newMovie);
-
+  renderMovies();
 };
 
 addMovieButton.addEventListener('click', addMovieHandler);
