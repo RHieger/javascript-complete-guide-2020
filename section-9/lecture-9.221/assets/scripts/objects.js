@@ -4,7 +4,17 @@ const searchButton = document.getElementById('search-btn');
 // Array of movie objects populated by addMovieHandler()
 const movies = [];
 
-const renderMovies = () => {};
+const renderMovies = () => {
+  const movieList = document.getElementById('movie-list');
+  
+  if (movieList.length === 0) {
+    movieList.classList.remove('visible');
+    return;
+  }  else {
+    movieList.classList.add('visible');
+  }
+  movieList.innerHTML = '';
+};
 
 const addMovieHandler = () => {
   
