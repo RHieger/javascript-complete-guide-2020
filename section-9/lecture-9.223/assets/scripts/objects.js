@@ -55,4 +55,8 @@ const addMovieHandler = () => {
   renderMovies();
 };
 
+const searchMovieHandler = () => {
+
+};
+
 addMovieButton.addEventListener('click', addMovieHandler);
