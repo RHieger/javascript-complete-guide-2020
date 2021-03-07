@@ -57,6 +57,10 @@ const addMovieHandler = () => {
 
 const searchMovieHandler = () => {
   const userFilter = document.getElementById('filter-title').value;
+
+  // Render filtered movie list
+  renderMovies(userFilter);
 };
 
 addMovieButton.addEventListener('click', addMovieHandler);
+searchButton.addEventListener('click', searchMovieHandler);
