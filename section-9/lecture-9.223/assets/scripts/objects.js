@@ -4,7 +4,7 @@ const searchButton = document.getElementById('search-btn');
 // Array of movie objects populated by addMovieHandler()
 const movies = [];
 
-const renderMovies = () => {
+const renderMovies = (filter = '') => {
   const movieList = document.getElementById('movie-list');
   
   if (movieList.length === 0) {
@@ -15,7 +15,13 @@ const renderMovies = () => {
   }
   movieList.innerHTML = '';
 
-  movies.forEach( (movie) => {
+  const filteredMovies = !filter
+   ? movies
+   : movies.filter(
+      movie => movie.info.title.includes(filter)
+  );
+
+  filteredMovies.forEach( (movie) => {
    const movieElement = document.createElement('li');
    let text = movie.info.title + '—';
    for (const key in movie.info) {
