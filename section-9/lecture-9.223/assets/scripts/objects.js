@@ -56,7 +56,7 @@ const addMovieHandler = () => {
 };
 
 const searchMovieHandler = () => {
-
+  const userFilter = document.getElementById('filter-title').value;
 };
 
 addMovieButton.addEventListener('click', addMovieHandler);
