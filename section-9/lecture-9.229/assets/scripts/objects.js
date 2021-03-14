@@ -54,7 +54,11 @@ const addMovieHandler = () => {
       title,
       [extraName]: extraValue
     },
-    id: parseInt(Math.random() * 10_000)
+    id: parseInt(Math.random() * 10_000),
+    getFormattedTitle: function() {
+      // Format user input
+      return this.info.title.toUpperCase();
+    }
   };
 
   movies.push(newMovie);
