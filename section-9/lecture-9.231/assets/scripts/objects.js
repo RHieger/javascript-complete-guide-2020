@@ -1,3 +1,4 @@
+"use strict";
 const addMovieButton = document.getElementById('add-movie-btn');
 const searchButton = document.getElementById('search-btn');
 
@@ -25,7 +26,8 @@ const renderMovies = (filter = '') => {
    const movieElement = document.createElement('li');
    const { info, ...otherProps } = movie;
    console.log(otherProps);
-   const { getFormattedTitle } = movie;
+   let { getFormattedTitle } = movie;
+   getFormattedTitle = getFormattedTitle.bind(movie);
    let text = getFormattedTitle() + '—';
    for (const key in info) {
      if (key !== 'title') {
