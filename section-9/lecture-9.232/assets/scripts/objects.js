@@ -27,8 +27,11 @@ const renderMovies = (filter = '') => {
    const { info, ...otherProps } = movie;
    console.log(otherProps);
    let { getFormattedTitle } = movie;
-   getFormattedTitle = getFormattedTitle.bind(movie);
-   let text = getFormattedTitle() + '—';
+   //  getFormattedTitle = getFormattedTitle.bind(movie);
+   // NOTE: This syntax at least seems similar to an IIFE
+   // (Immediately Invoked Function Expression)—worth doing
+   // some research.
+   let text = getFormattedTitle.call(movie) + '—';
    for (const key in info) {
      if (key !== 'title') {
       text += `${key}: ${info[key]}`;
