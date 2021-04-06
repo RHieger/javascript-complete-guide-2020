@@ -1,6 +1,6 @@
 /* Basic Typography */
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap');
 
 html,
 body {
@@ -25,7 +25,46 @@ h1 {
   font-size: 3rem;
   font-weight: 700;
   font-variant: small-caps;
+  letter-spacing: 1.25px;
   color: #ffffff; /* White */
   text-align: center;
   text-shadow: 3.5px 4.5px 5px #900c3f;
+}
+
+#dogBreeds {
+  padding-top: 35px;
+}
+
+#dogList {
+  width: 850px;
+  margin: 12px auto 35px auto;
+  border: 2px outset #aa8f77;
+  border-collapse: collapse;
+}
+
+#dogList caption {
+  display: none;
+}
+
+#dogList th {
+  border: 2.5px solid #900c3f;
+  border-collapse: collapse;
+  background-color: #aa8f77;
+  color: #ffffff;
+  padding: 9px 15px;
+  font-family: 'Raleway', 'Helvetica', sans-serif;
+  font-size: 21px;
+  font-weight: 800;
+  font-variant: small-caps;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+#dogList td {
+  border: 2.5px solid #900c3f;
+  border-collapse: collapse;
+  padding: 9px 15px;
+  text-align: center;
+  font-family: 'Raleway', 'Helvetica', sans-serif;
+  font-weight: 600;
 }
