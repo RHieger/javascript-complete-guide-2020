@@ -37,7 +37,7 @@ h1 {
 
 #dogList {
   width: 850px;
-  margin: 12px auto 35px auto;
+  margin: 12px auto 75px auto;
   border: 2px outset #aa8f77;
   border-collapse: collapse;
 }
@@ -67,4 +67,46 @@ h1 {
   text-align: center;
   font-family: 'Raleway', 'Helvetica', sans-serif;
   font-weight: 600;
+  color: #900c3f;
+}
+
+#buttonBox {
+  width: 725px;
+  background-color: #900c3f;
+  border-radius: 12px;
+  margin-left: 385px;
+  height: 75px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#buttonBox button,
+#buttonBox button:visited {
+  width: 215px;
+  height: 45px;
+  background-color: #aa8f77;
+  border: 2px outset #ffffff;
+  border-radius: 15px;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: 'Raleway', 'Helvetica', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+}
+
+#buttonBox button:hover {
+  background-color: #ffffff;
+  border-color: #000000;
+  color: #900c3f;
+  font-weight: 800;
+  transition: all ease-in-out 1s;
+}
+
+#buttonBox button:active {
+  box-shadow: 2px 3px #000000;
+  border-style: inset;
+  transition: all ease-in-out 1s;
 }
