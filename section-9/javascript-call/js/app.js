@@ -14,6 +14,7 @@ const breedAvgLife3 = document.getElementById('avgLife3');
 const button1 = document.getElementById('breed1');
 const button2 = document.getElementById('breed2');
 const button3 = document.getElementById('breed3');
+const button4 = document.getElementById('reset');
 
 const breed1 = {
   breed: 'PUG',
@@ -47,6 +48,24 @@ const dog1 = getDogInfo.info.call(breed1);
 const dog2 = getDogInfo.info.call(breed2);
 const dog3 = getDogInfo.info.call(breed3);
 
+const resetTable = () => {
+  
+  const noSelection = 'NO BREED SELECTED';
+
+  breedOne.textContent = noSelection;
+  breedOrigin1.textContent = null;
+  breedAvgLife1.textContent = null;
+
+  breedTwo.textContent = noSelection;
+  breedOrigin2.textContent = null;
+  breedAvgLife2.textContent = null;
+
+  breedThree.textContent = noSelection;
+  breedOrigin3.textContent = null;
+  breedAvgLife3.textContent = null;
+
+};
+
 // Button box event listeners populate
 // table with dog breed information.
 
@@ -59,7 +78,7 @@ button1.addEventListener('click', () => {
 button2.addEventListener('click', () => {
   breedTwo.textContent = dog2[0];
   breedOrigin2.textContent = dog2[1];
-  breedAvgLife2.textContent = dog2[0];
+  breedAvgLife2.textContent = dog2[2];
 });
 
 button3.addEventListener('click', () => {
@@ -67,3 +86,5 @@ button3.addEventListener('click', () => {
   breedOrigin3.textContent = dog3[1];
   breedAvgLife3.textContent = dog3[2];
 });
+
+button4.addEventListener('click', resetTable);
