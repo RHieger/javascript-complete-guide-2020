@@ -71,10 +71,10 @@ h1 {
 }
 
 #buttonBox {
-  width: 725px;
+  width: 1000px;
   background-color: #900c3f;
   border-radius: 12px;
-  margin-left: 385px;
+  margin: 0 auto;
   height: 75px;
   display: flex;
   justify-content: space-around;
